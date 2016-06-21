@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+oop:重用性，灵活性，扩展性
+为了实现整体运算，每个对象都能接受信息，处理数据和想起他对象发送信息。
+1，父类
+子类继承父类，子类里面都可可以重写父类方法
+
+封装
+        把嘴脸皮肤封装成一个人类
+继承
+        不同的人类去继承实现基本的人类
+多态
+        不同的人类吃饭，皮肤颜色都不一样
+class 人{
+
+        嘴
+        脸
+        吃饭
+}
+
+类 黄种人extends 人{
+        //干掉脸
+        脸：function(){}
+
+}
+
+</body>
+<script>
+	function people(eyes){
+
+		this.eye=eyes;
+		this.header="small";
+		this.single = function(){
+			alert(this.header+this.eye);
+		}
+
+	}
+	people.prototype.eye="123";
+	people.prototype.header="big";
+	function yellowman(eyes){
+			people.call(this,eyes);
+
+	}
+// Object.create父类拿不到子类的prototype.a
+	yellowman.prototype = Object.create(people.prototype);
+	yellowman.prototype.a = 'aaa';	
+	var t = new people();
+	var p = new yellowman('blie');
+	p.single()
+	console.log(t,p);
+
+</script>
+</html>
