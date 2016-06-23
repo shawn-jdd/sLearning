@@ -1,0 +1,53 @@
+//request
+
+POST /yorkie HTTP/1.1
+Host: github.com
+...
+...
+...
+Content-Type: application/json //MIME
+
+{body}
+{
+	"name":"yorkie"
+}
+
+name=yorkie
+//expressjs
+request = {
+	method:"post",
+	path : "/yorkie",
+	headers ：{
+		‘content-tye’: ......
+	}
+}
+
+//response
+
+var response = {
+
+}
+response.status = function(){}
+response.status(200);
+response.status(500);
+
+response.headers["Content-Type" = 'application/json']
+response.set('content-type','application/json');
+
+response.send([20,10]);
+response.json({abc:123,123:'abcd'})
+
+HTTP/1.1 200 ok
+content-Type:...
+...
+...
+...
+{body}
+//response error
+
+http/1.1 400 bad request
+...
+...
+...
+{body}
+
