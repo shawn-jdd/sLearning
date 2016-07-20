@@ -1,0 +1,249 @@
+/*body {
+
+  margin:auto;	
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width:50rem;
+
+  background-color: rgba(0,0,0,0.4);
+}
+li{
+	list-style: none;
+	height:30px;
+	margin-top:5px;
+	text-decoration: underline;
+	cursor:pointer;
+	//wait;
+}
+.body{
+	color:#fff;
+}
+a {
+  color: #00B7FF;
+}
+.box{
+	margin:auto;
+	position:absolute;
+	z-index: 1;
+
+}
+.block{
+	display:block;
+}
+.box:after{
+	content:".";
+	clear: both;
+
+}
+label{
+	color:#fff;
+	font-weight: bold;
+	width: 5rem;
+	display:inline-block;
+}
+input{
+	height:1.5rem;
+	width: 8rem;
+	border: 1px solid #CDC28D;
+	background-color: #F2F9FD;
+	padding-top: 4px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+	padding-left: 10px; 
+
+	background:rgba(255,0,0,0.2);
+}
+div{
+	margin:10px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: left;
+}
+.border{
+
+	border:1px solid rgba(16,16,16,0.2);
+}
+.menu{
+	width:10rem;
+	background-color: rgba(45,212,194,0.4);
+	
+}
+.content{
+	width:18rem;
+	padding:10px;
+
+}
+*/
+label{
+	color:#fff;
+	font-weight: bold;
+	width: 5rem;
+	display:inline-block;
+}
+input{border: 1px solid #CDC28D;}
+input.text{
+	height:1.5rem;
+	width: 8rem;
+	border: 1px solid #CDC28D;
+	background-color: #F2F9FD;45
+	padding-top: 4px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+	padding-left: 10px; 
+
+	background:rgba(255,0,0,0.2);
+}
+input.button{
+	width:6rem;height:2rem;
+	border-radius: 5px;
+	background:rgba(208,191,25,0.9);
+}
+.baobao{
+
+	width:10rem;
+}
+.sayhello{
+	    color: rgba(14, 97,255,0.8);
+	    font-weight: bold;
+	    font-size: 4rem;
+	    position: relative;
+	    top:0px;
+}
+
+.bg{
+	
+	background: url(../images/shawn.jpg) no-repeat scroll 0% 50%;
+	-webkit-background-size:cover;
+  	-moz-background-size:cover;
+  	-o-background-size:cover;
+  	background-size:cover;
+	
+	width: 50rem;
+	height: 30rem;
+	position: absolute;
+	top:80px;
+	z-index: -1;
+	overflow: none;
+	-webkit-filter:opacity(0.3) blur(3px) ;
+
+	
+}
+.lvjing_mohu{
+	-webkit-filter: blur(5px); /* Chrome, Opera */
+       -moz-filter: blur(5px);
+        -ms-filter: blur(5px);   
+            filter: blur(5px); 
+}
+article{
+	background:
+		
+		-webkit-gradient(radial, 0% 10%, 30, 100% 10, 0, from(rgba(255,1,136,0.5)), to(rgba(255,1,136,0)), color-stop(75%, rgba(255,1,136,0.3))),
+		-webkit-gradient(radial, 30% 20%, 20, 102% 20%, 0, from(rgba(0,201,255,0.5)), to(rgba(0,201,255,0)), color-stop(80%, rgba(0,201,255,0.1))),
+		-webkit-gradient(radial, 60% 80%, 0, 100% 180, 90, from(rgba(228, 199,0,0.5)), to(rgba(228, 199,0,0)), color-stop(80%, rgba(228, 199,0,0.5))),
+		-webkit-gradient(radial, 50% 43%, 0, 40 180, 90, from(rgba(228, 66,21,0.5)), to(rgba(228, 66,21,0)), color-stop(80%, rgba(228, 66,21,0.8)));
+	width: 50rem;
+	height: 26rem;
+	overflow-y:scroll;
+}
+article>div{
+
+	padding:10px;
+	opacity: 1;
+	color:rgba(0,0,0,1);
+	
+}
+
+.edit{margin:3px;padding:2px 5px;border-radius:3px;background-color:#f3f3f3;color:#333;font-size:13px;}
+.edit:hover{text-decoration:none;background-color:#f00;color:#fff;-webkit-transition:color .2s linear;}
+/*::-webkit-scrollbar 滚动条整体部分
+::-webkit-scrollbar-thumb  滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）
+::-webkit-scrollbar-track  滚动条的轨道（里面装有Thumb）
+::-webkit-scrollbar-button 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。
+::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
+::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处
+::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸
+http://www.xuanfengge.com/css3-webkit-scrollbar.html*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/ 
+::-webkit-scrollbar
+{
+	width: 10px;
+
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+
+	background-color: rgba(0,0,0,0.0);
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+		border: 0px;
+
+	background-color: rgba(0,0,0,0);
+}
+.article{
+	color:rgba(255,255,255,1);
+
+}
+
+/* inspired by http://yihui.name/cn/ */
+
+*{padding:0;margin:0;}
+
+body{
+	/*渐变的类型，可以是线性渐变(linear)或是径向渐变(radial)--
+	起点x,y坐标
+	大小
+	终点坐标
+	大小
+	从什么颜色
+	到什么颜色
+	中间过度到什么颜色
+	-webkit-gradient(radial, 50 50, 0, 500 500, 100, from(#A7D30C), to(rgba(1,159,98,0.5)), color-stop(90%, #019F62)), 
+        -webkit-gradient(radial, 105 105, 20, 112 120, 50, from(#ff5f98), to(rgba(255,1,136,0)), color-stop(75%, #ff0188)), 
+        -webkit-gradient(radial, 95 15, 15, 102 20, 40, from(#00c9ff), to(rgba(0,201,255,0)), color-stop(80%, #00b5e2)), 
+        -webkit-gradient(radial, 0 150, 50, 0 140, 90, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700)),
+	*/
+/*	background:
+		
+		-webkit-gradient(radial, 50% 50%, 20, 112 120, 50, from(#ff5f98), to(rgba(255,1,136,0)), color-stop(75%, #ff0188)),
+		-webkit-gradient(radial, 30% 20%, 15, 102 20, 40, from(#00c9ff), to(rgba(0,201,255,0)), color-stop(80%, #00b5e2)),
+		-webkit-gradient(radial, 60% 80%, 0, 0 180, 90, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700)),
+		-webkit-gradient(radial, 50% 43%, 0, 40 180, 90, from(#255434), to(rgba(228, 66,21,0)), color-stop(80%, #255434));*/
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#96ff00), color-stop(0.5, orange), to(rgb(255, 0, 0)));*/
+	background-color:#dedede;
+	-webkit-background-size:cover;
+  	-moz-background-size:cover;
+  	-o-background-size:cover;
+  	background-size:cover;
+	width:600px;
+	margin:2em auto;
+	padding:0 2em;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+}
+p{line-height:24px;margin:1em 0;}
+
+header{padding:.5em 0;border-bottom:1px solid #cccccc;}
+
+nav{float:left;font-family:"Microsoft YaHei";font-size:1.1em;text-transform:uppercase;margin-left:-12em;width:9em;text-align:right;
+	background:rgba(95,158,160,0.8);
+}
+
+nav a{display:block;text-decoration:none;padding:.7em 1em;color:#000000;}
+nav a:hover{background-color:rgba(160,95,146,0.8);color:#f9f9f9;-webkit-transition:color .2s linear;}
+article{font-size:16px;padding-top:.5em;}
+article a{color:#dd0000;text-decoration:none;}
+article a:hover{color:#333333;text-decoration:underline;}
+.info{font-size:14px;}
+
+.prepage a{float:left;text-decoration:none;padding:.5em 1em;color:#ff0000;font-weight:bold;}
+.nextpage a{float:right;text-decoration:none;padding:.5em 1em;color:#ff0000;font-weight:bold;}
+.prepage a:hover,.nextpage a:hover{text-decoration:none;background-color:#ff0000;color:#f9f9f9;-webkit-transition:color .2s linear;}
+

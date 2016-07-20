@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "学习express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shawn",
+  "license": "ISC",
+  "dependencies": {
+    "express-generator": "^4.13.4"
+  }
+}
